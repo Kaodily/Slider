@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Room homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@700&family=DM+Serif+Display&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Gideon+Roman&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=League+Spartan:wght@500;600;700&family=Lexend+Deca&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@400;500;700&family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main
+      class="grid grid-rows-5 sm:grid-rows-6 md:grid-cols-7 md:grid-rows-3 lg:grid-rows-3"
+    >
+      <div
+        id="slider"
+        style="background-image: url('/src/images/mobile-image-hero-1.jpg')"
+        class="sm:col-span-3 sm:row-span-2 md:col-span-4 md:row-span-2 lg:row-span-2 sm:bg-[url('/src/images/mobile-image-hero-1.jpg')] md:bg-[url('/src/images/desktop-image-hero-1.jpg')] bg-cover bg-center bg-no-repeat relative"
+      >
+        <header class="w-full h-24 hidden absolute bg-white" id="nav_bar">
+          <nav class="flex justify-between py-10 px-5">
+            <img
+              class="close w-4 h-4 ml-5 mt-1"
+              src="/src/images/icon-close.svg"
+              alt="close"
+              id="close"
+            />
+            <ul class="flex">
+              <li class="mr-5"><a class="hover:underline" href="#">Home</a></li>
+              <li class="mr-5"><a class="hover:underline" href="#">Shop</a></li>
+              <li class="mr-5">
+                <a class="hover:underline" href="#">About</a>
+              </li>
+              <li class="mr-5">
+                <a class="hover:underline" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="logo flex pt-9 pl-7 md:hidden">
+          <img
+            src="/src/images/icon-hamburger.svg"
+            alt="icon-hamburger"
+            class="mr-20"
+            id="hamburger"
+          />
+          <img src="/src/images/logo.svg" alt="logo" />
+        </div>
+        <header class="mobile_navbar hidden sm:hidden md:block">
+          <nav class="mobile_navbar flex px-3 pl-10 h-32 items-center">
+            <div>
+              <a href="#">
+                <img class="pr-10" src="/src/images/logo.svg" alt="logo"/>
+              </a>
+            </div>
+            <ul class="flex">
+              <li class="mr-5">
+                <a class="text-white hover:underline" href="#">Home</a>
+              </li>
+              <li class="mr-5">
+                <a class="text-white hover:underline" href="#">Shop</a>
+              </li>
+              <li class="mr-5">
+                <a class="text-white hover:underline" href="#">About</a>
+              </li>
+              <li class="mr-5">
+                <a class="text-white hover:underline" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section class="flex absolute bottom-0 right-0 md:hidden">
+          <div
+            class="arrow_left bg-black w-10 h-10 flex justify-center items-center border-black hover:bg-gray-300"
+          >
+            <img
+              src="/src/images/icon-angle-left.svg"
+              alt="arrow left"
+              class="w-3 h-4"
+            />
+          </div>
+          <div
+            class="arrow_right bg-black w-10 h-10 flex justify-center items-center border-black hover:bg-gray-300"
+          >
+            <img
+              src="/src/images/icon-angle-right.svg"
+              alt="arrow right"
+              class="w-3 h-4"
+            />
+          </div>
+        </section>
+      </div>
+      <section
+        class="h-50% px-8 py-10 sm:col-span-3 sm:row-span-1 md:row-span-2 md:px-28 md:py-20 lg:row-span-2 relative info"
+      >
+        <h1 class="text-3xl font-bold font-['League_Spartan'] pb-3 h1">
+          Discover innovative ways to decorate
+        </h1>
+
+        <p class="text-base font-['League_Spartan'] text-gray-700 para mb-3">
+          We provide unmatched quality, comfort, and style for property owners
+          across the country. Our experts combine form and function in bringing
+          your vision to life. Create a room in your own style with our
+          collection and make your property a reflection of you and what you
+          love.
+        </p>
+
+        <div class="flex">
+          <div>
+            <p
+              class="tracking-[0.4em] font-['League_Spartan'] text-sm uppercase"
+            >
+              Shop now
+            </p>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="/src/images/icon-arrow.svg"
+                alt="arrow"
+                class="mt- ml-2"
+              />
+            </a>
+          </div>
+          <div class="hidden sm:hidden md:block">
+            <div class="flex absolute bottom-0 left-0">
+              <div
+                class="arrow_left bg-black lg:w-28 lg:h-20 md:w-16 md:h-16 flex justify-center items-center border-black hover:bg-gray-300"
+              >
+                <img
+                  src="/src/images/icon-angle-left.svg"
+                  alt="arrow left"
+                  class="w-4 h-5"
+                />
+              </div>
+              <div
+                class="arrow_right bg-black lg:w-28 lg:h-20 md:w-16 md:h-16 flex justify-center items-center border-black hover:bg-gray-300"
+              >
+                <img
+                  src="/src/images/icon-angle-right.svg"
+                  alt="arrow right"
+                  class="w-4 h-5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-[url('/src/images/image-about-dark.jpg')] sm:bg-[url('/src/images/image-about-dark.jpg')] sm:col-span-3 sm:row-span-1 md:bg-[url('/src/images/image-about-dark.jpg')] md:col-span-2 lg:row-span-1 bg-center bg-cover bg-no-repeat"
+      ></section>
+      <section class="px-8 py-20 sm:col-span-3 sm:row-span-1">
+        <h2 class="text-sm uppercase font-bold font-['League_Spartan']">
+          About our furniture
+        </h2>
+        <p class="text-base font-['League_Spartan'] text-gray-700 mb-3">
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </section>
+      <section
+        class="bg-[url('/src/images/image-about-light.jpg')] sm:bg-[url('/src/images/image-about-light.jpg')] sm:col-span-3 sm:row-span-1 md:bg-[url('/src/images/image-about-light.jpg')] md:col-span-2 lg:row-span-1 bg-center bg-cover bg-no-repeat"
+      ></section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Kaodily</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
